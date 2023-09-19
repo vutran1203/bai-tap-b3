@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --orange:
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+        }
+
+        .mtb {
+            margin-bottom: 32px;
+        }
+
+        #main {
+            margin: auto;
+        }
+
+        .row {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .col {
+            float: left;
+        }
+
+        .col-half {
+            width: 30%;
+        }
+
+        .col-large {
+            width: 70%;
+            display: inline-block;
+        }
+
+        .col-small {
+            width: 30%;
+            display: inline-block;
+        }
+
+        .half-FEATURED {
+            float: right;
+            flex: 2;
+        }
+
+        #header {
+            height: 50px;
+            background-color: #fff;
+            width: 100%;
+            display: flex;
+        }
+
+        .navbar {
+            margin: auto;
+        }
+
+            .navbar div {
+                display: inline-block;
+                color: black;
+                padding: 8px 12px;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 50px;
+                font-weight: 400;
+                z-index: 3;
+                position: relative;
+                cursor: pointer;
+            }
+
+                .navbar div:hover {
+                    background-color: #3e5eab;
+                    color: #fff;
+                    height: 257px;
+                }
+
+        #slider {
+            margin-top: 10px;
+            height: 200px;
+            display: flex;
+            padding: 5px 0 10px 0;
+            z-index: 2;
+            position: relative;
+        }
+
+            #slider img {
+                margin: auto;
+                height: 192px;
+                line-height: 200px;
+                position: relative;
+            }
+
+        .content-wrapper {
+            margin: auto;
+            display: block;
+        }
+
+        #content {
+            width: 1000px;
+            margin: left;
+            margin-right: auto;
+            justify-content: center;
+        }
+
+        .section-header {
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        .section-dsc {
+            text-align: justify;
+            margin-bottom: 32px;
+        }
+
+        .contact-link {
+            color: orange;
+            text-decoration: none;
+            padding-top: 32px;
+        }
+
+        .section-header {
+            display: block;
+        }
+
+        p b {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        #footer {
+            margin-top: 200px;
+            border-top: 1px solid #ccc;
+            color: #ccc;
+        }
+
+            #footer p {
+                display: inline-block;
+                text-transform: uppercase;
+                margin-top: 32px;
+            }
+
+            #footer div {
+                display: inline-block;
+                float: right;
+                padding: 0 8px;
+                text-transform: uppercase;
+                margin-top: 32px;
+            }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="navbar">
+                <div class="navbar-items">about</div>
+                <div class="navbar-items">services</div>
+                <div class="navbar-items">protfollo</div>
+                <div class="navbar-items">contact us</div>
+            </div>
+        </div>
+        <div id="slider">
+            <img src="hinh-anh/hinh01.png" alt="hinh1"/>
+
+        </div>
+        <div id="content">
+            <div class="content-wrapper">
+
+                <div class="row">
+                    <div class="col-large">
+                        <div class="row">
+                            <h2 style="color:orange" class="section-header ">
+                                about
+                            </h2>
+                            <p class="section-dsc">
+                                <b>Enlighten Designs </b> is an Internet solutions provider that specialises in front and back end development. To view some of the web sites we have created view our <span style="color:orange" class="color-text">pontolio</span>
+                            </p>
+                            <p class="section-dsc">
+                                We are currently undergoing a face lift, so if you have any questions or would like more information about the services we provide please feel free to contact
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-header">
+                                contact us
+                            </h3>
+                            <div class="contact-wrap">
+                                <p class="contact-info">Phone (07) 853 6060</p>
+                                <p class="contact-info">Fax  (07) 853 6060</p>
+                                <p class="contact-info">Email info@enlighten.co.nz</p>
+                                <p class="contact-info mtb">P.O BOX 14159, Hamlinton, New Zealand </p>
+
+                            </div>
+                            <a href="" class="contact-link">More contact information</a>
+                        </div>
+                    </div>
+                    <div class="col-small half-FEATURED">
+                        <h3 style="color:greenyellow" class="section-header">
+                            FEATURED PROJECTS
+                        </h3>
+                        <p class="section-dsc">
+                            <b>The New Zealand National Party</b>
+                            We recently launched <span style="color:greenyellow">
+                                the New Zealand National Party
+                            </span> website - Lorem ipsem dolor sit amet.
+
+                        </p>
+                        <p class="section-dsc">
+                            <b> Greensets </b>
+                            We recently launched the <span style="color:greenyellow"> Greensets</span> website-lorem
+                            ipsem dolor sit amet. Pita ala pesama borak na
+                            falanuisen
+                        </p>
+                        <p class="section-dsc">
+                            <b> Nutrition Care</b>
+                            We recently launched the <span style="color:greenyellow"> Nutrition Care</span>
+                            website-lorem ipsem dolor sit amet. Pita ata pesama
+                            borak na falanuisen
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>copy right</p>
+
+            <div class="navbar-items">contact us</div>
+            <div class="navbar-items">protfollo</div>
+            <div class="navbar-items">services</div>
+            <div class="navbar-items">about</div>
+        </footer>
+    </div>
+</body>
+</html>

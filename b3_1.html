@@ -1,0 +1,123 @@
+﻿<
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            width: 100%;
+            display: flex;
+            height: 80px;
+            align-items: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .pic-heading,
+        .pic-title,
+        .pic-subtil {
+            display: inline-block;
+            line-height: 74.88px;
+            padding: 12px;
+            text-transform: uppercase;
+        }
+
+        .pic-subtil--right {
+            float: right;
+            position: relative;
+        }
+
+        .pic-title {
+            position: relative;
+        }
+
+            .pic-title::after,
+            .pic-subtil--right::after {
+                content: "";
+                display: block;
+                height: 1.4rem;
+                background-color: #ccc;
+                width: 2px;
+                position: absolute;
+                right: -5px;
+                top: 40px;
+            }
+
+        .pic-main {
+            display: flex;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        #footer {
+            margin-top: 200px;
+            border-top: 1px solid #ccc;
+            color: #ccc;
+        }
+
+            #footer p {
+                display: inline-block;
+                text-transform: uppercase;
+                margin-top: 32px;
+            }
+
+            #footer div {
+                display: inline-block;
+                float: right;
+                padding: 0 8px;
+                text-transform: uppercase;
+                margin-top: 32px;
+            }
+    </style>
+</head>
+<body>
+    <header class="pic-heading">
+        <h1 class="pic-title">
+            peter verkuilen
+        </h1>
+        <p class="pic-subtil">
+            <i>
+                desgin + clonsuling
+            </i>
+        </p>
+
+        <p class="pic-subtil pic-subtil--right">
+            Welcome
+        </p>
+        <p class="pic-subtil pic-subtil--right">
+            Design
+        </p>
+        <p class="pic-subtil pic-subtil--right">
+            About
+        </p>
+    </header>
+    <div class="pic-main">
+
+        <table border="0" width="700" cellpadding="50">
+            <tr>
+                <td colspan="2"><img src="/hinh-anh/anh1.png"> </td>
+
+            </tr>
+            <tr>
+                <td><img src="/hinh-anh/anh2.png"> </td>
+                <td><img src="/hinh-anh/anh3.png"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <p>copy right</p>
+
+        <div class="navbar-items">contact us</div>
+        <div class="navbar-items">protfollo</div>
+        <div class="navbar-items">services</div>
+        <div class="navbar-items">about</div>
+    </div>
+</body>
+</html>
